@@ -42,6 +42,7 @@ export class AuthenticationService {
     this.tokenHandler = new BaseTokenRequestHandler(new FetchRequestor());
     this.notifier = new AuthorizationNotifier();
     this.authorizationHandler.setAuthorizationNotifier(this.notifier);
+    debugger
     this.notifier.setAuthorizationListener((request, response, error) => {
       console.log('Authorization request complete ', request, response, error);
       if (response) {

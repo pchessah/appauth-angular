@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  clientId: 'xGZxEAJhzlkuQUlWl90y1ntIX-0UDWHx',
-  OPServer: 'https://kdhttps.auth0.com',
+  clientId: 'pkce-client',
+  OPServer: 'https://erp.staging.kyosk.dev/identity',
   redirectURL: 'http://localhost:4200/callback',
   scope: 'openid email profile',
   userInfoEndpoint: '/userinfo'
